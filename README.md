@@ -1,6 +1,6 @@
 # PoC Distribuidora Centro — validación de disponibilidad
 
-Prueba de Concepto del Grupo 6 (Construcción de Sitios Web II, IRESM 2026).
+Prueba de Concepto del Grupo 6 
 Escenario: plataforma de pedidos B2B para una distribuidora regional de Córdoba.
 
 La PoC demuestra una sola funcionalidad: **validar si hay stock suficiente de un producto para una cantidad solicitada.**
