@@ -78,21 +78,6 @@ La consulta responde `200` en ambos casos: que no haya stock es un resultado vá
 | `cantidad` ausente, cero, negativa o no entera | 400 | `{"error": "El parámetro 'cantidad' es obligatorio y debe ser un entero positivo."}` |
 | Producto inexistente | 404 | `{"error": "No existe un producto con id 99."}` |
 
-## Cómo se lee la URL
-
-Ejemplo: `/productos/1/disponibilidad?cantidad=10`
-
-| Parte | Qué es |
-|---|---|
-| `/productos` | El recurso: la lista de productos |
-| `/1` | El **id** del producto (parámetro de ruta, `req.params.id`) |
-| `/disponibilidad` | Lo que se consulta sobre ese producto |
-| `?` | Separa la ruta de los parámetros de consulta |
-| `cantidad=10` | Parámetro de consulta (`req.query.cantidad`): la cantidad a verificar |
-
-Lo que va **antes** de la `?` identifica qué recurso es (el producto 1). Lo que va **después** son opciones de la consulta, escritas como `nombre=valor` y unidas con `&` si hubiera más de una.
-
-Leída completa: «del producto 1, decime la disponibilidad para una cantidad de 10».
 
 ## URLs para probar (Postman / Thunder Client)
 
